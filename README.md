@@ -47,6 +47,21 @@ Para poder disfrutar de esta aplicación, tan solo debes descargarla del reposit
 
 ¡Listo para trabajar en el código! 🚀
 
+## IMPORTANTE ⚠️
+
+En la clase `CharactersFragment`, dentro del código en la estructura de control implementada en el `onViewCreated()`, hay una parte comentada con una breve instrucción. 
+
+Si esta parte se deja tal cual, al completar la guía interactiva, cuando se vuelva a ejecutar la app, **ésta no aparecerá más**, ya que no contiene un apartado que permita volver a ejecutarla. 
+
+En caso de querer hacer la guía de nuevo, sigue estos pasos:
+
+1. **Descomentar el método `showConfirmationDialog()`**.
+2. **Ejecutar `Run app`**.
+3. **Aceptar el cuadro de diálogo** que aparece para que la guía se reinicie.
+4. **Cerrar la app**.
+5. **Comentar nuevamente el método `showConfirmationDialog()`**.
+6. **Volver a ejecutar `Run app`**, así comenzamos de cero.
+
 ## CONCLUSIONES DEL DESARROLLADOR
 
 El desarrollo de esta aplicación, aparentemente, parecía una tarea no muy complicada, hasta que me topé con los típicos problemas. Mi mayor dificultad fue al manejar las **preferencias de la app**. Creía que tenía claro su funcionamiento, pero nada más lejos de la realidad.
