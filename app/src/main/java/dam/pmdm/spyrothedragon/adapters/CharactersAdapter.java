@@ -1,10 +1,12 @@
 package dam.pmdm.spyrothedragon.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,9 +18,16 @@ import java.util.List;
 public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.CharactersViewHolder> {
 
     private List<Character> list;
+    private static CharactersAdapter.OnCanvasAnimatedListener listener;
 
-    public CharactersAdapter(List<Character> charactersList) {
+    public interface OnCanvasAnimatedListener {
+        void onCanvasAnimated(View dragonView);
+    }
+
+    public CharactersAdapter(List<Character> charactersList, OnCanvasAnimatedListener listener) {
+
         this.list = charactersList;
+        this.listener = listener;
     }
 
     @Override
@@ -46,11 +55,22 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
 
         TextView nameTextView;
         ImageView imageImageView;
+        int id;
 
         public CharactersViewHolder(View itemView) {
             super(itemView);
             nameTextView = itemView.findViewById(R.id.name);
             imageImageView = itemView.findViewById(R.id.image);
+
+            itemView.setOnLongClickListener(v -> {
+                id = getAdapterPosition();
+                if (id == 0) {
+                    Log.e("OnLongClick", "Pulsación larga sobre item 0");
+                    listener.onCanvasAnimated(imageImageView);
+                    return true;
+                }
+                return false;
+            });
         }
     }
 }

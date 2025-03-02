@@ -5,16 +5,16 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:elevation="0dp"
-    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/yellow2"
     app:cardCornerRadius="30dp"
-    app:cardBackgroundColor="@color/yellow2">
+    app:cardElevation="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00000000"
         android:orientation="horizontal"
-        android:padding="5dp"
-        android:background="#00000000">
+        android:padding="5dp">
 
         <!-- Imagen del personaje -->
         <ImageView
@@ -22,8 +22,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/spyro"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/spyro" />
 
         <!-- Nombre del personaje -->
         <TextView

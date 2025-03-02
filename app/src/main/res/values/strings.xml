@@ -4,6 +4,65 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Antonio Reyes de Dios.</b></string>
     <string name="accept">Aceptar</string>
+
+    <!--Strings guide.xml-->
+    <string name="wellcome1">Bienvenido</string>
+    <string name="wellcome2">Prepárate para explorar el mundo mágico\n de esta aplicación inspirada en...</string>
+    <string name="wellcome3">
+        Aquí aprenderás a navegar por pestañas\n
+        llenas de dragones, mundos fascinantes\n
+        y montones de tesoros brillantes.\n\n
+        ¿Listo para empezar?\n\n
+        Pulsa "Comenzar" y deja que Spyro\n
+        te lleve volando a través de esta
+        guía interactiva.
+    </string>
+    <string name="button_start">COMENZAR</string>
+    <string name="button_finish">Saltar Guía</string>
+
+    <!-- Strings fragment_cahracters.xml -->
+    <string name="text_character">
+    Aquí podrás explorar a todos\n
+    los personajes del mundo\n
+    de Spyro.
+</string>
+
+    <!-- Strings fragment_worlds.xml -->
+    <string name="text_worlds">
+    Aquí podrás explorar\n
+    los distintos Mundos\n
+    de Spyro.
+</string>
+
+    <!-- Strings fragment_collectibles.xml -->
+    <string name="text_collectibles">
+    Descubre todos los\n
+    Tesoros que tiene\n
+    de Spyro.
+</string>
+
+    <!-- Strings guide_resume.xml -->
+    <string name="text_resume">
+    Enhorabuena!!!\n
+    Has completado la guía\n
+        del Mundo de Spyro\n
+        Guía Personajes -> Completada\n
+         Guía Mundos -> Completada\n
+         Guía Coleccionables -> Completada\n
+        Para Finalizar pulsa el botón Finalizar.
+</string>
+    <string name="text_button_finish">Finalizar</string>
+
+    <!--String guide_characters.xml-->
+    <string name="text_bottom_next">Siguiente</string>
+    <string name="text_bottom_back">Atrás</string>
+
+    <!-- Strings activity_main.xml -->
+    <string name="resetButtom">Mostrar Guía</string>
+    <!-- Strings guide_about.xml -->
+    <string name="text_row">Descubre quién ha desarrollado la app!!!</string>
+    <!-- Strings botón Salir de la guia -->
+    <string name="text_finish_button">Salir Guía</string>
 </resources>

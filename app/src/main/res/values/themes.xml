@@ -8,6 +8,7 @@
 
         <item name="android:windowSplashScreenBackground">@color/purple</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
-
+        <item name="android:fontFamily">@font/boing</item> <!-- Fuente personalizada -->
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

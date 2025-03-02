@@ -3,23 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/navigation_characters">
+    app:startDestination="@id/navigation_characters">
+    <fragment
+        android:id="@+id/navigation_characters"
+        android:name="dam.pmdm.spyrothedragon.ui.CharactersFragment"
+        android:label="@string/characters"
+        tools:layout="@layout/fragment_characters">
+        <action
+            android:id="@+id/action_fragmentCharacteres_to_fragmentWorlds"
+            app:destination="@id/navigation_worlds"
+
+         />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_worlds"
         android:name="dam.pmdm.spyrothedragon.ui.WorldsFragment"
         android:label="@string/worlds"
-        tools:layout="@layout/fragment_worlds" />
+        tools:layout="@layout/fragment_worlds">
+        <action
+            android:id="@+id/action_fragmentWorlds_to_fragmentCollectibles"
+            app:destination="@id/navigation_collectibles"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/navigation_characters"
-        android:name="dam.pmdm.spyrothedragon.ui.CharactersFragment"
-        android:label="@string/characters"
-        tools:layout="@layout/fragment_characters" />
 
     <fragment
         android:id="@+id/navigation_collectibles"
         android:name="dam.pmdm.spyrothedragon.ui.CollectiblesFragment"
         android:label="@string/collectibles"
-        tools:layout="@layout/fragment_collectibles" />
+        tools:layout="@layout/fragment_collectibles">
+        <action
+            android:id="@+id/action_fragmentCollectibles_to_fragmentWorlds"
+            app:destination="@id/navigation_worlds"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_fragmentCollectibles_to_fragmentCharacters"
+            app:destination="@id/navigation_characters"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
 </navigation>
