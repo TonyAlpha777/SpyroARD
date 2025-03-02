@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Desliza el fragmento entrante desde la derecha -->
+    <slide android:slideEdge="right" android:duration="300"/>
+
+    <!-- Desliza el fragmento anterior hacia la izquierda -->
+    <slide android:slideEdge="left" android:duration="300"/>
+</transitionSet>
